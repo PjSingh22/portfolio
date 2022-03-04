@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --title-font: 'Roboto', sans-serif;
+}
+
+@media (max-width: 844px){
+  html, body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  p {
+    color: rgb(163,163,163);
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .hero {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: rgb(8,141,173);
+    clip-path: ellipse(300% 100% at -175% 0%);
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    max-width: 150px;
+  }
+
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
