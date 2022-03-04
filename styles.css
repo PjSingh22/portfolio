@@ -48,6 +48,7 @@ table {
 /* My Styles */
 
 :root {
+  --title-font: 'Playfair Display', serif;
   --text-font: 'Roboto', sans-serif;
 }
 
@@ -60,20 +61,15 @@ body {
   background-image: url(./photos/blake-connally-B3l0g6HLxr8-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  /* display: flex;
-  color: white;
-  gap: 100px;
-  align-items: center;
-  justify-content: center; */
   display: grid;
   color: white;
   grid-template-columns: 500px 500px;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .about-details {
-  /* max-width: 500px; */
   padding: 80px;
   display: flex;
   flex-direction: column;
@@ -99,11 +95,66 @@ body {
   max-width: 300px;
 }
 
+/* Projects styles */
+
+.title {
+  text-align: center;
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  grid-gap: 40px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.card-info {
+  box-shadow: 5px 5px 5px grey;
+}
+
+.card > img {
+  width: 100%;  
+}
+
+.name-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.buttons:first-child {
+  margin-right: 20px;
+}
+
+.proj-desc {
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+h3 {
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 @media  (max-width: 768px) {
   .about {
     background-image: url(./photos/blake-connally-small.jpg);
     grid-template-columns: 1fr;
-    align-items: center;
     justify-items: center;
     padding: 20px 0 0 0;
     /* padding: 20px; */
