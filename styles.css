@@ -103,11 +103,12 @@ body {
   font-weight: bold;
   font-size: 3rem;
   padding: 20px;
+  text-decoration: underline;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: repeat(auto-fit, 500px);
   justify-content: center;
   grid-gap: 40px;
   justify-items: center;
@@ -151,6 +152,27 @@ h3 {
   font-size: 1.8rem;
 }
 
+/* Footer style */
+
+.contact {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.info {
+  padding: 10px;
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+.detail {
+  font-size: 1.2rem;
+}
+
+.links > a {
+  margin: 10px;
+}
 @media  (max-width: 768px) {
   .about {
     background-image: url(./photos/blake-connally-small.jpg);
